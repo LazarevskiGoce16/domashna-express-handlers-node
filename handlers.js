@@ -21,6 +21,5 @@ const studenti = async (req, res) => {
 };
 
 module.exports = {
-    studenti,
-    fileWrite
+    studenti
 };
