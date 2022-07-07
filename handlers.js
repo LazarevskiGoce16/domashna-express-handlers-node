@@ -14,9 +14,9 @@ const fileWrite = (filename, data) => {
 const studenti = async (req, res) => {
     try {
         await fileWrite('studenti.txt', JSON.stringify(req.body));
-        res.send(s);
+        return res.send("Data stored successfully!");
     } catch (error) {
-        res.send(error);
+        console.log(error);
     }
 };
 
