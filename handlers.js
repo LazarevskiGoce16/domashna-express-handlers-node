@@ -13,7 +13,7 @@ const fileWrite = (filename, data) => {
 
 const studenti = async (req, res) => {
     try {
-        const s = await fileWrite('studenti.txt', JSON.stringify(req.body));
+        await fileWrite('studenti.txt', JSON.stringify(req.body));
         res.send(s);
     } catch (error) {
         res.send(error);
